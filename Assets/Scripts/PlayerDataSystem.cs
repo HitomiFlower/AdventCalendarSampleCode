@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public struct Position
+public struct Axis
 {
     public Vector3 value;
 }
@@ -13,24 +13,26 @@ public struct CollisionRadius
 
 public class PlayerDataSystem
 {
-    List<Position> positions = new List<Position>();
+    List<Axis> positions = new List<Axis>();
     List<CollisionRadius> radiusList = new List<CollisionRadius>();
 
     public PlayerDataSystem(List<Vector3> initPosition, List<float> initRadius)
     {
         for (int i = 0; i < initPosition.Count; i++)
         {
-            positions.Add(new Position {value = initPosition[i]});
+            positions.Add(new Axis {value = initPosition[i]});
             radiusList.Add(new CollisionRadius {value = initRadius[i]});
         }
     }
 
-    public bool[] IsCollision(Vector3 targetPosition, int length)
+    public List<bool> IsCollision(Vector3 targetPosition, int length)
     {
-        bool[] collisionList = new bool[length];
+        List<bool> collisionList = new List<bool>();
         for (int i = 0; i < length; i++)
         {
-            collisionList[i] = Vector3.Distance(positions[i].value, targetPosition) < radiusList[i].value;
+            var collision = Vector3.Distance(positions[i].value, targetPosition) < radiusList[i].value;
+            if(collision)
+                collisionList.Add(collision);
         }
 
         return collisionList;

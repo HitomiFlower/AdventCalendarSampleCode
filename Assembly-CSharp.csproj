@@ -54,11 +54,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Class.cs" />
+    <Compile Include="Assets\Scripts\Classic\Movement.cs" />
+    <Compile Include="Assets\Scripts\Classic\Starter.cs" />
+    <Compile Include="Assets\Scripts\ECS\BootStapper.cs" />
+    <Compile Include="Assets\Scripts\ECS\SpaceshipSystem.cs" />
+    <Compile Include="Assets\Scripts\ECS\SpeedComponent.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\PlayerDataInClass.cs" />
     <Compile Include="Assets\Scripts\PlayerDataSystem.cs" />
+    <None Include="Assets\Spaceship\Materials\2-sided.shader" />
+    <Reference Include="Unity.Entities.Properties">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Properties.Codegen">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Properties.Codegen.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Jobs">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Jobs.Editor">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Editor">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Properties">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Android.Editor">
       <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Analytics.Android.Editor.dll</HintPath>
@@ -66,11 +97,41 @@
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Rendering.Hybrid">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Properties.Editor">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Properties.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Hybrid">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms.Editor">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Transforms.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms.Hybrid">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.0b8/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -278,6 +339,9 @@
     </Reference>
     <Reference Include="Unity.Analytics">
       <HintPath>C:/Projects/AdventCalendarSampleCode/Library/PackageCache/com.unity.analytics@3.0.9/Android/Unity.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>C:/Projects/AdventCalendarSampleCode/Library/PackageCache/com.unity.collections@0.0.9-preview.10/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>C:/Projects/AdventCalendarSampleCode/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>

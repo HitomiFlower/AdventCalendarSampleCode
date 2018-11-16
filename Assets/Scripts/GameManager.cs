@@ -5,7 +5,7 @@ using Debug = UnityEngine.Debug;
 
 public class GameManager : MonoBehaviour
 {
-    private const int PlayerCount = 100000;
+    private const int PlayerCount = 1000000;
     
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     private void ClassExecute(List<Vector3> initPositions, List<float> initRadius, Vector3 targetPosition)
     {
         Stopwatch sw = new Stopwatch();
-        sw.Start();
+        
         List<PlayerDataInClass> playerDataInClasses = new List<PlayerDataInClass>(PlayerCount);
 
         for (int i = 0; i < PlayerCount; i++)
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
             playerDataInClasses.Add(new PlayerDataInClass(initPositions[i], initRadius[i]));
         }
         
-        
+        sw.Start();
         int count = 0;
         foreach (var player in playerDataInClasses)
         {
@@ -50,13 +50,13 @@ public class GameManager : MonoBehaviour
     private void StructExecute(List<Vector3> initPositions, List<float> initRadius, Vector3 targetPosition)
     {
         Stopwatch sw = new Stopwatch();
-        sw.Start();
+        
         PlayerDataSystem playerDataSystem = new PlayerDataSystem(initPositions, initRadius);
         
-        
+        sw.Start();
         var count = playerDataSystem.IsCollision(targetPosition, initPositions.Count);
         sw.Stop();
-        Debug.Log($"Struct execute finished! Count: {count.Length}, time elapsed: {sw.Elapsed}");
+        Debug.Log($"Struct execute finished! Count: {count.Count}, time elapsed: {sw.Elapsed}");
     }
     
 }
