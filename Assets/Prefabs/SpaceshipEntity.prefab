@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3072275704574825596}
   - component: {fileID: 7536859254785621394}
   m_Layer: 0
-  m_Name: Spaceship
+  m_Name: SpaceshipEntity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 514054121246065276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffc2ed8c108e77341919de758759ff18, type: 3}
+  m_Script: {fileID: 11500000, guid: c9657145dc6619844a3ac6b8c2260a8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SerializedData:
